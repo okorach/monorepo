@@ -6,7 +6,7 @@ pipeline {
           withSonarQubeEnv('SonarCloud') {
             script {
               def scannerHome = tool 'SonarScanner';
-              sh "${scannerHome}/bin/sonar-scanner"
+              sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=sonar-project.app1.properties"
             }
           }
       }
@@ -28,7 +28,7 @@ pipeline {
           withSonarQubeEnv('SonarCloud') {
             script {
               def scannerHome = tool 'SonarScanner';
-              sh "${scannerHome}/bin/sonar-scanner"
+              sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=sonar-project.app2.properties"
             }
           }
       }
