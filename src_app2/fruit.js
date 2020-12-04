@@ -8,6 +8,7 @@ function Fruit(name, color, taste) {
 Fruit.prototype.peelable = function() {
     // FIXME add apples, lemons and grafruits
     return this.name = "orange";
+    // FIXME - Dead code
     if (this.name == "lemon") {
         return true;
     }
