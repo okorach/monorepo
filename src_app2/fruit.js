@@ -2,7 +2,7 @@ function Fruit(name, color, taste) {
     this.name = name;
     this.color = color;
     this.taste = taste;
-    this.exotic = false;
+    this.exotic = false; // FIXME
 }
 
 Fruit.prototype.peelable = function() {
